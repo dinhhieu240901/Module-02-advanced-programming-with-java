@@ -1,8 +1,7 @@
 package com.codegym.thuchanh;
-import com.codegym.thuchanh.Interface.Edible;
-import com.codegym.thuchanh.Chicken;
-import com.codegym.thuchanh.Tiger;
-import com.codegym.thuchanh.Animal;
+import com.codegym.thuchanh.Animals.Chicken;
+import com.codegym.thuchanh.Animals.Tiger;
+import com.codegym.thuchanh.Animals.Animal;
 public class AbstractAndInterfaceTests {
     public static void main(String[] args) {
         Animal[] animals = new Animal[2];
@@ -12,9 +11,9 @@ public class AbstractAndInterfaceTests {
             System.out.println(animal.makeSound());
             if (animal instanceof Chicken) {
                 System.out.println( ((Chicken) animal).howToEat());
-
             }
         }
+        
         
     }
 }

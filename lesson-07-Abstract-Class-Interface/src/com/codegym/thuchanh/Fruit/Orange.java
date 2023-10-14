@@ -1,6 +1,6 @@
-package com.codegym.thuchanh;
+package com.codegym.thuchanh.Fruit;
 
-public class Tiger extends Animal {
+public class Orange extends Fruit {
     @Override
     public String makeSound() {
         return "Tiger: roarrrrr!";

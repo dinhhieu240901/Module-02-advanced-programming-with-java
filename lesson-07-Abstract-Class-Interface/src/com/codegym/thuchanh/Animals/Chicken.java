@@ -1,4 +1,4 @@
-package com.codegym.thuchanh;
+package com.codegym.thuchanh.Animals;
 import com.codegym.thuchanh.Interface.Edible;
 public class Chicken extends Animal implements Edible {
     @Override
