@@ -19,6 +19,7 @@ public class ResizableTest {
     System.out.println("Circle Area: " + circle.getArea());
     System.out.println("Rectangle Area: " + rectangle.getArea());
     System.out.println("Square Area: " + square.getArea());
+    System.out.println("Square Area: " + square.getPerimeter());
 
     circle.draw();
     rectangle.draw();

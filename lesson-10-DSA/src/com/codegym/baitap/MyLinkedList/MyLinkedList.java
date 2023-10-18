@@ -1,9 +1,14 @@
 package com.codegym.baitap.MyLinkedList;
+
+import java.util.NoSuchElementException;
+
 public class MyLinkedList<E> {
+
   private Node head;
   private int size = 0;
 
   private class Node {
+
     E data;
     Node next;
 
@@ -12,8 +17,7 @@ public class MyLinkedList<E> {
     }
   }
 
-  public MyLinkedList() {
-  }
+  public MyLinkedList() {}
 
   public int size() {
     return size;
@@ -22,12 +26,14 @@ public class MyLinkedList<E> {
   public boolean isEmpty() {
     return size == 0;
   }
+
   public void addFirst(E element) {
     Node newNode = new Node(element);
     newNode.next = head;
     head = newNode;
     size++;
   }
+
   public void addLast(E element) {
     Node newNode = new Node(element);
     if (head == null) {
@@ -41,6 +47,7 @@ public class MyLinkedList<E> {
     }
     size++;
   }
+
   public void add(E element) {
     Node newNode = new Node(element);
     if (head == null) {
@@ -76,6 +83,44 @@ public class MyLinkedList<E> {
     return false;
   }
 
+  public void remove(int index) {
+    if (index < 0 || index >= size) {
+      throw new IndexOutOfBoundsException("Index is out of bounds");
+    }
+    if (index == 0) {
+      head = head.next;
+    } else {
+      Node current = head;
+      for (int i = 0; i < index - 1; i++) {
+        current = current.next;
+      }
+      current.next = current.next.next;
+    }
+    size--;
+  }
+
+  public void removeFirst() {
+    if (head == null) {
+      throw new NoSuchElementException();
+    } else {
+      head = head.next;
+      size--;
+    }
+  }
+
+  public void removeLast() {
+    if (head == null) {
+      throw new NoSuchElementException();
+    } else {
+      Node current = head;
+      for (int i = 0; i < size - 1; i++) {
+        current = current.next;
+      }
+      current.next = null;
+      size--;
+    }
+  }
+
   public E get(int index) {
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException("Index is out of bounds");
@@ -86,6 +131,7 @@ public class MyLinkedList<E> {
     }
     return current.data;
   }
+
   public boolean contains(E element) {
     Node current = head;
     while (current != null) {
@@ -96,6 +142,7 @@ public class MyLinkedList<E> {
     }
     return false;
   }
+
   public int indexOf(E element) {
     Node current = head;
     int index = 0;
@@ -107,5 +154,33 @@ public class MyLinkedList<E> {
       current = current.next;
     }
     return -1;
+  }
+
+  public MyLinkedList<E> clone() {
+    MyLinkedList<E> newList = new MyLinkedList<>();
+    Node current = head;
+    while (current != null) {
+      newList.add(current.data);
+      current = current.next;
+    }
+    return newList;
+  }
+
+  public void clear() {
+    for (int i = size; i > 0; i--) {
+      Node current = head;
+      for (int j = 0; j < i; j++) {
+        current = current.next;
+      }
+      current.next = null;
+      size--;
+    }
+  }
+  public void printList() {
+    Node temp = head;
+    while (temp != null) {
+      System.out.println(temp.data);
+      temp = temp.next;
+    }
   }
 }

@@ -21,8 +21,8 @@ class FizzBuzzTest {
     }
     @Test
     void findFizzBuzz2() {
-        int a = -5;
-        String expected = "FizzBuzz";
+        int a = 5;
+        String expected = "Buzz";
         String result = FizzBuzz.fizzBuzz(a);
         Assertions.assertEquals(expected, result);
     }

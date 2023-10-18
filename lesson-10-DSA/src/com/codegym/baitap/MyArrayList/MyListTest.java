@@ -12,8 +12,8 @@ public class MyListTest {
     list.add("Việt");
     list.showList();
     //indexOf
-      System.out.print("Vị trí của các sinh viên là: " );
-    System.out.print(list.indexOf("Thảo")+" ");
+    System.out.print("Vị trí của các sinh viên là: ");
+    System.out.print(list.indexOf("Thảo") + " ");
     System.out.println(list.indexOf("Hiếu"));
     //remove
     list.remove(1);
@@ -21,8 +21,9 @@ public class MyListTest {
     System.out.println(list.contain("Hiếu"));
     System.out.println(list.contain("Thảo"));
     list.clear();
-    System.out.print("Sau khi xóa sạch sinh viên trong danh sách thì kích thước của mảng là : ");
+    System.out.print(
+      "Sau khi xóa sạch sinh viên trong danh sách thì kích thước của mảng là : "
+    );
     System.out.println(list.size);
-
   }
 }
