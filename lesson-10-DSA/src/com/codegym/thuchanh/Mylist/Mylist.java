@@ -3,7 +3,7 @@ package com.codegym.thuchanh.Mylist;
 public class Mylist<E> {
 
   private int size;
-  private final int DEFAULT_CAPACITY = 10;
+  int DEFAULT_CAPACITY = 10;
   private Object[] elements;
 
   public Mylist() {
