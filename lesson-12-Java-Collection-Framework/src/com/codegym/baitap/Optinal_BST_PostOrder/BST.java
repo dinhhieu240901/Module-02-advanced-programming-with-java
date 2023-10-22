@@ -1,4 +1,4 @@
-package com.codegym.thuchanh.Optional_BST;
+package com.codegym.baitap.Optinal_BST_PostOrder;
 
 public class BST<E extends Comparable<E>> extends AbstractTree<E> {
 
@@ -58,16 +58,20 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     System.out.println(root.element + " ");
     inorder(root.right);
   }
-  private void postorder(TreeNode<E> root){
-    if(root == null) return;
+
+    @Override
+    public void postorder() {
+        postorder(root);
+    }
+
+    //sort with postorder
+  public void postorder(TreeNode<E> root) {
+    if (root == null) return;
     postorder(root.left);
     postorder(root.right);
     System.out.println(root.element + " ");
   }
-  @Override
-  public void postorder() {
-    inorder(root);
-  }
+
   public void get(String key) {
     if (root == null) {
       System.out.println(key + " not found");
@@ -107,6 +111,4 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
       parent.right = new TreeNode<>(s);
     }
   }
-
-
 }
