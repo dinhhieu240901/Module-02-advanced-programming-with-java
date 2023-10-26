@@ -17,7 +17,7 @@ public class InsertionSort {
       for (j = i - 1; list[j] > currentMin; j--) {
         list[j + 1] = list[j];
       }
-      list[j + 1] = currentMin;
+      list[j + 1] = currentMin; 
     }
   }
 

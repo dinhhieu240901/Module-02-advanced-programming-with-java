@@ -176,6 +176,7 @@ public class MyLinkedList<E> {
       size--;
     }
   }
+
   public void printList() {
     Node temp = head;
     while (temp != null) {

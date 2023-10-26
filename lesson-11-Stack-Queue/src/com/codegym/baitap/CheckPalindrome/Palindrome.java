@@ -1,5 +1,7 @@
 package com.codegym.baitap.CheckPalindrome;
+
 import java.util.Stack;
+
 public class Palindrome {
 
   public boolean isPalindrome(String input) {
@@ -16,15 +18,15 @@ public class Palindrome {
     }
     return true;
   }
- public boolean isPalindrome1(String s){
+
+  public boolean isPalindrome1(String s) {
     s = s.toLowerCase();
-    int i = 0 ,j = s.length()-1;
-    while(i<=j){
-      if(s.charAt(i++) != s.charAt(j--))
-      {
+    int i = 0, j = s.length() - 1;
+    while (i <= j) {
+      if (s.charAt(i++) != s.charAt(j--)) {
         return false;
       }
     }
     return true;
- }
+  }
 }

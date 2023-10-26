@@ -3,7 +3,7 @@ package com.codegym.baitap.Implement_Queue;
 class Node {
 
   public int data;
-   public Node next;
+  public Node next;
 
   public Node(int data) {
     this.data = data;
@@ -54,7 +54,6 @@ public class Queue {
       System.out.println("Hàng đợi trống.");
       return;
     }
-
     Node current = front;
     do {
       System.out.print(current.data + " ");
@@ -65,16 +64,11 @@ public class Queue {
 
   public static void main(String[] args) {
     Queue queue = new Queue();
-
     queue.enQueue(1);
     queue.enQueue(2);
     queue.enQueue(3);
-
-
     queue.printQueue(); // 1. 2.3
-
     queue.deQueue();
-
     queue.printQueue(); // 2,3
   }
 }

@@ -25,8 +25,8 @@ public class SelectionSort {
 
   public static void main(String[] args) {
     selectionSort(list);
-      for (double i : list) {
-          System.out.print(i+ " ");
-      }
+    for (double i : list) {
+      System.out.print(i + " ");
+    }
   }
 }
