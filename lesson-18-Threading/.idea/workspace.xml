@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fade964-de5a-45b8-a404-4bdadc277187" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson-18-Threading.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Create_Simple_Thread/NumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Display_Odd_Even_Number/EvenThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Display_Odd_Even_Number/OddThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Display_Odd_Even_Number/TestThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Optional_Prime_Number/LazyPrimeFactorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Optional_Prime_Number/OptimizedPrimeFactorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/baitap/Optional_Prime_Number/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/thuchanh/Create_Thread_Runnable/RunnableDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/thuchanh/Number_Count_Application/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codegym/thuchanh/Racing_Cars/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/AnimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/AnimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/AnimalType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/FactoryMethod/InvalidAnimalTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/Test/ThuKy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deploymen_singleton/BookBorrower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deploymen_singleton/BookSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deploymen_singleton/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deployment_object_pool/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deployment_object_pool/ObjectDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deployment_object_pool/Taxi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deployment_object_pool/TaxiNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deployment_object_pool/TaxiPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-21-Create-Design-Pattern/src/com/codegym/thuchanh/deployment_object_pool/TaxiThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,10 +59,11 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.NumberGenerator">
     <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codegym.thuchanh.Racing_Cars.Car" />
       <module name="lesson-18-Threading" />
@@ -126,9 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumberGenerator" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.TestThread" />
-        <item itemvalue="Application.NumberGenerator" />
         <item itemvalue="Application.Count" />
         <item itemvalue="Application.Car" />
       </list>
@@ -143,7 +148,9 @@
       <option name="presentableId" value="Default" />
       <updated>1698307101735</updated>
       <workItem from="1698307102705" duration="5790000" />
-      <workItem from="1698370448166" duration="9299000" />
+      <workItem from="1698370448166" duration="10794000" />
+      <workItem from="1698714868809" duration="504000" />
+      <workItem from="1698722816412" duration="2558000" />
     </task>
     <servers />
   </component>
